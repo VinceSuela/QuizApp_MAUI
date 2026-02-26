@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="QuizApp.MainPage"
+    BackgroundColor="{AppThemeBinding Light={StaticResource LightBackground}, Dark={StaticResource DarkBackground}}">
+
+    <Grid Padding="20"
+          RowDefinitions="Auto,*,Auto">
+
+        <VerticalStackLayout Spacing="5">
+            <Label Text="Mini Quiz"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="{AppThemeBinding Light={StaticResource LightText}, Dark={StaticResource DarkText}}"
+                   x:Name="lblTimer"/>
+
+            <ProgressBar x:Name="quizProgress"
+                         Progress="0"
+                         HeightRequest="8"
+                         BackgroundColor="{AppThemeBinding Light={StaticResource LightBorder}, Dark={StaticResource DarkBorder}}"
+                         ProgressColor="{AppThemeBinding Light=#6366F1, Dark=#a5b4fc}"/>
+        </VerticalStackLayout>
+
+        <ContentView x:Name="selectionContainer"
+                     Grid.Row="1"
+                     ZIndex="10"
+                     IsVisible="True">
+            <VerticalStackLayout x:Name="subjectSelection"
+                                 Padding="20"
+                                 Spacing="15"
+                                 VerticalOptions="Center">
+
+                <Label Text="Select Your Subject"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="{AppThemeBinding Light={StaticResource LightText}, Dark={StaticResource DarkText}}"
+                       Margin="0,0,0,10"/>
+
+                <RadioButton x:Name="rbMobile"
+                             GroupName="Subjects"
+                             IsChecked="True"
+                             Style="{StaticResource SubjectCardStyle}">
+                    <RadioButton.Content>
+                        <Label Text="Mobile App Development (.NET)"
+                               TextColor="{AppThemeBinding Light={StaticResource LightSubdued}, Dark={StaticResource DarkSubdued}}"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               InputTransparent="True"/>
+                    </RadioButton.Content>
+                </RadioButton>
+
+                <RadioButton x:Name="rbSQL"
+                             GroupName="Subjects"
+                             Style="{StaticResource SubjectCardStyle}">
+                    <RadioButton.Content>
+                        <Label Text="Computer Programming 6 (SQL)"
+                               TextColor="{AppThemeBinding Light={StaticResource LightSubdued}, Dark={StaticResource DarkSubdued}}"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               InputTransparent="True"/>
+                    </RadioButton.Content>
+                </RadioButton>
+            </VerticalStackLayout>
+        </ContentView>
+
+        <Frame x:Name="quizCard"
+               Grid.Row="1"
+               CornerRadius="20"
+               Padding="20"
+               BackgroundColor="{AppThemeBinding Light={StaticResource LightCard}, Dark={StaticResource DarkCard}}"
+               HasShadow="True">
+
+            <VerticalStackLayout Spacing="20">
+
+                <Label x:Name="lblQuestions"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#111827, Dark=#F9FAFB}"
+                       HorizontalTextAlignment="Center"/>
+
+                <VerticalStackLayout Spacing="12">
+
+                    <Button x:Name="btnA"
+                            Clicked="btnA_Clicked"
+                            CornerRadius="12"
+                            VerticalOptions="FillAndExpand"
+                            LineBreakMode="WordWrap"
+                            BackgroundColor="{AppThemeBinding Light={StaticResource ButtonLight}, Dark={StaticResource ButtonDark}}"
+                            TextColor="{AppThemeBinding Light={StaticResource LightSubdued}, Dark={StaticResource DarkSubdued}}"
+                            IsVisible="False"/>
+
+                    <Button x:Name="btnB"
+                            Clicked="btnB_Clicked"
+                            CornerRadius="12"
+                            VerticalOptions="FillAndExpand"
+                            LineBreakMode="WordWrap"
+                            BackgroundColor="{AppThemeBinding Light={StaticResource ButtonLight}, Dark={StaticResource ButtonDark}}"
+                            TextColor="{AppThemeBinding Light={StaticResource LightSubdued}, Dark={StaticResource DarkSubdued}}"
+                            IsVisible="False"/>
+
+                    <Button x:Name="btnC"
+                            Clicked="btnC_Clicked"
+                            CornerRadius="12"
+                            VerticalOptions="FillAndExpand"
+                            LineBreakMode="WordWrap"
+                            BackgroundColor="{AppThemeBinding Light={StaticResource ButtonLight}, Dark={StaticResource ButtonDark}}"
+                            TextColor="{AppThemeBinding Light={StaticResource LightSubdued}, Dark={StaticResource DarkSubdued}}"
+                            IsVisible="False"/>
+
+                    <Button x:Name="btnD"
+                            Clicked="btnD_Clicked"
+                            CornerRadius="12"
+                            VerticalOptions="FillAndExpand"
+                            LineBreakMode="WordWrap"
+                            BackgroundColor="{AppThemeBinding Light={StaticResource ButtonLight}, Dark={StaticResource ButtonDark}}"
+                            TextColor="{AppThemeBinding Light={StaticResource LightSubdued}, Dark={StaticResource DarkSubdued}}"
+                            IsVisible="False"/>
+                </VerticalStackLayout>
+
+                <Label x:Name="lblAnswers"
+                       IsVisible="False"
+                       FontSize="16"
+                       TextColor="{AppThemeBinding Light=#374151, Dark=#D1D5DB}"
+                       HorizontalTextAlignment="Center"/>
+
+            </VerticalStackLayout>
+        </Frame>
+
+        <CollectionView x:Name="reviewList"
+                        Grid.Row="1"
+                        IsVisible="False"
+                        Margin="0,10">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame CornerRadius="16"
+                           Padding="15"
+                           Margin="0,10"
+                           BackgroundColor="{AppThemeBinding Light={StaticResource LightCard}, Dark={StaticResource DarkCard}}"
+                           BorderColor="{AppThemeBinding Light={StaticResource LightBorder}, Dark={StaticResource DarkBorder}}">
+
+                        <VerticalStackLayout Spacing="6">
+
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="{Binding QuestionNumber}"
+                                              FontSize="16"
+                                              FontAttributes="Bold"
+                                              TextColor="{AppThemeBinding Light={StaticResource LightText}, Dark={StaticResource DarkText}}"/>
+                                        <Span Text="{Binding Question}"
+                                              FontAttributes="Bold"
+                                              FontSize="16"
+                                              TextColor="{AppThemeBinding Light={StaticResource LightText}, Dark={StaticResource DarkText}}"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Your Answer: "
+                                              TextColor="{AppThemeBinding Light={StaticResource LightText}, Dark={StaticResource DarkText}}"/>
+                                        <Span FontAttributes="Bold"
+                                              TextColor="{AppThemeBinding Light={StaticResource LightText}, Dark={StaticResource DarkText}}"/>
+                                        <Span Text="{Binding UserAnswerLetter}"
+                                              TextColor="{Binding UserColor}"/>
+                                        <Span Text=". "
+                                              TextColor="{Binding UserColor}"/>
+                                        <Span Text="{Binding UserAnswerText}"
+                                              TextColor="{Binding UserColor}"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                            <Label>
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Correct: "
+                                              TextColor="{AppThemeBinding Light={StaticResource LightText}, Dark={StaticResource DarkText}}"/>
+                                        <Span FontAttributes="Bold"
+                                              TextColor="{AppThemeBinding Light={StaticResource LightText}, Dark={StaticResource DarkText}}"/>
+                                        <Span Text="{Binding CorrectLetter}"
+                                              TextColor="Green"/>
+                                        <Span Text=". "
+                                              TextColor="Green"/>
+                                        <Span Text="{Binding CorrectText}"
+                                              TextColor="Green"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                        </VerticalStackLayout>
+
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Button Text="Reveal Score"
+                Grid.Row="2"
+                x:Name="btnShowScore"
+                Clicked="btnShowScore_Clicked"
+                IsVisible="False"
+                HeightRequest="55"
+                CornerRadius="25"
+                BackgroundColor="{AppThemeBinding Light=#22C55E, Dark=#16A34A}"
+                TextColor="White"/>
+
+        <Button Grid.Row="2"
+                x:Name="btnStartQuiz"
+                Text="Start Quiz"
+                Clicked="btnStartQuiz_Clicked"
+                HeightRequest="55"
+                CornerRadius="25"
+                BackgroundColor="{AppThemeBinding Light=#6366F1, Dark=#4F46E5}"
+                TextColor="White"
+                FontAttributes="Bold"/>
+    </Grid>
+</ContentPage>

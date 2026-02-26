@@ -1,0 +1,552 @@
+[
+  {
+    "id": 1,
+    "question": "What is the process of software development commonly called?",
+    "options": {
+      "A": "Digital Product Evolution",
+      "B": "Software Development Lifecycle (SDLC)",
+      "C": "Software Development Routine",
+      "D": "Application Building Process"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 2,
+    "question": "Which SDLC phase is usually the most resource-intensive as it involves the actual building of the application?",
+    "options": {
+      "A": "Inception",
+      "B": "Design",
+      "C": "Deployment",
+      "D": "Development"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 3,
+    "question": "What does .NET MAUI stand for?",
+    "options": {
+      "A": ".NET Multi-platform App UI",
+      "B": ".NET Mobile and Universal Interface",
+      "C": ".NET Multi-device Application Integration",
+      "D": ".NET Main App User Interface"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 4,
+    "question": "Which languages are primarily used to create native mobile and desktop apps with .NET MAUI?",
+    "options": {
+      "A": "Java and XML",
+      "B": "C# and XAML",
+      "C": "Python and HTML",
+      "D": "Swift and JSON"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 5,
+    "question": "In which SDLC phase is the app's User Experience (UX) and User Interface (UI) defined?",
+    "options": {
+      "A": "Design",
+      "B": "Stabilization",
+      "C": "Inception",
+      "D": "Development"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 6,
+    "question": "Which platform is NOT officially supported for running .NET MAUI apps from a single shared code-base?",
+    "options": {
+      "A": "Android",
+      "B": "macOS",
+      "C": "Linux",
+      "D": "Windows"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 7,
+    "question": "What happens during the 'Stabilization' phase of the mobile SDLC?",
+    "options": {
+      "A": "The app idea is refined.",
+      "B": "The app is delivered to users.",
+      "C": "Quality Assurance (QA) begins testing and bugs are fixed.",
+      "D": "The UI is turned into code."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 8,
+    "question": "Which runtime environment does .NET MAUI use for Android, iOS, and macOS?",
+    "options": {
+      "A": "CoreCLR",
+      "B": "JVM",
+      "C": "V8 Engine",
+      "D": "Mono"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 9,
+    "question": "Which runtime environment does .NET MAUI use for Windows?",
+    "options": {
+      "A": ".NET CoreCLR",
+      "B": "Mono",
+      "C": "WinRT",
+      "D": "Silverlight"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 10,
+    "question": "What does the Base Class Library (BCL) do in the .NET MAUI architecture?",
+    "options": {
+      "A": "It handles the UI rendering for each specific platform.",
+      "B": "It abstracts the details of the underlying platform away from your code.",
+      "C": "It acts as the app store for deployment.",
+      "D": "It is the language used to write the backend."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 11,
+    "question": "What feature allows you to modify XAML and source code while the app is running without rebuilding?",
+    "options": {
+      "A": "Live Debugging",
+      "B": "Instant Deploy",
+      "C": "Hot Reload",
+      "D": "Fast Refresh"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 12,
+    "question": "Which file contains the code for creating and configuring the Application object?",
+    "options": {
+      "A": "AppShell.xaml",
+      "B": "MauiProgram.cs",
+      "C": "App.xaml.cs",
+      "D": "MainPage.xaml"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 13,
+    "question": "What is the default entry point for a .NET MAUI application?",
+    "options": {
+      "A": "The Shell class",
+      "B": "The MainPage class",
+      "C": "The Window class",
+      "D": "The App class"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 14,
+    "question": "Which property of the App class controls the first screen the user sees?",
+    "options": {
+      "A": "MainPage",
+      "B": "StartPage",
+      "C": "RootPage",
+      "D": "InitialView"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 15,
+    "question": "What is the purpose of the AppShell.xaml file?",
+    "options": {
+      "A": "To specify the visual hierarchy and handle navigation routing.",
+      "B": "To define the business logic of the app.",
+      "C": "To store images and fonts.",
+      "D": "To configure the platform-specific bootstrap code."
+    },
+    "answer": "A"
+  },
+  {
+    "id": 16,
+    "question": "Which of the following is a hierarchical object used in Shell to represent bottom tabs?",
+    "options": {
+      "A": "FlyoutItem",
+      "B": "MenuBar",
+      "C": "TabBar",
+      "D": "SideNav"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 17,
+    "question": "Which page type is the simplest and most common, displaying a single view?",
+    "options": {
+      "A": "TabbedPage",
+      "B": "ContentPage",
+      "C": "FlyoutPage",
+      "D": "NavigationPage"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 18,
+    "question": "What is the purpose of a ScrollView?",
+    "options": {
+      "A": "To display a list of items using a template.",
+      "B": "To enable the display of items in a scrolling window when space is limited.",
+      "C": "To swipe through a collection of items.",
+      "D": "To align controls in a grid."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 19,
+    "question": "Which view allows a user to swipe through a collection of items like a gallery?",
+    "options": {
+      "A": "CarouselView",
+      "B": "ListView",
+      "C": "CollectionView",
+      "D": "SwipeView"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 20,
+    "question": "What does a 'Layout' define in a UI?",
+    "options": {
+      "A": "The colors and fonts of the app.",
+      "B": "The rules by which controls are displayed relative to each other.",
+      "C": "The database connection strings.",
+      "D": "The platform-specific API calls."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 21,
+    "question": "Which layout positions child elements in a grid of rows and columns?",
+    "options": {
+      "A": "StackLayout",
+      "B": "FlexLayout",
+      "C": "AbsoluteLayout",
+      "D": "Grid"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 22,
+    "question": "Which layout is used to set exact x and y coordinates for controls?",
+    "options": {
+      "A": "AbsoluteLayout",
+      "B": "Grid",
+      "C": "StackLayout",
+      "D": "RelativeLayout"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 23,
+    "question": "How does FlexLayout differ from StackLayout?",
+    "options": {
+      "A": "It only supports vertical orientation.",
+      "B": "It does not support spacing.",
+      "C": "It can wrap child controls if they do not fit in a single row or column.",
+      "D": "It is used only for images."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 24,
+    "question": "What property adds 'breathing space' around a control, pushing others away?",
+    "options": {
+      "A": "Padding",
+      "B": "Margin",
+      "C": "Spacing",
+      "D": "Thickness"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 25,
+    "question": "What property keeps children from getting close to the border of the layout?",
+    "options": {
+      "A": "Margin",
+      "B": "BorderThickness",
+      "C": "Inset",
+      "D": "Padding"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 26,
+    "question": "What does XAML stand for?",
+    "options": {
+      "A": "Extensible Application Markup Language",
+      "B": "X-linked Application Markup Language",
+      "C": "Expressive App Markup Language",
+      "D": "Extended Android Markup Language"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 27,
+    "question": "XAML is based on which other markup language?",
+    "options": {
+      "A": "HTML",
+      "B": "JSON",
+      "C": "XML",
+      "D": "YAML"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 28,
+    "question": "What is a primary benefit of using XAML for UI development?",
+    "options": {
+      "A": "It makes the app run faster.",
+      "B": "It replaces the need for C#.",
+      "C": "It allows the separation of the app's UI and behavior.",
+      "D": "It automatically fixes bugs in the code."
+    },
+    "answer": "C"
+  },
+  {
+    "id": 29,
+    "question": "What syntax is used in XAML to declare an element to instantiate, such as <Label />?",
+    "options": {
+      "A": "Property Element Syntax",
+      "B": "Object Element Syntax",
+      "C": "Tag Based Syntax",
+      "D": "Attribute Syntax"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 30,
+    "question": "In XAML, what is used to specify the location of information needed to instantiate elements?",
+    "options": {
+      "A": "Assembly",
+      "B": "Reference",
+      "C": "Library",
+      "D": "Namespace (xmlns)"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 31,
+    "question": "The x:Class attribute in XAML is used to:",
+    "options": {
+      "A": "Define the color of the page.",
+      "B": "Specify a fully qualified .NET class name for the code-behind.",
+      "C": "Set the priority of the layout.",
+      "D": "Hide the element from the user."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 32,
+    "question": "What is the 'code-behind' file extension for a XAML file named MainPage.xaml?",
+    "options": {
+      "A": "MainPage.cs",
+      "B": "MainPage.xaml.bin",
+      "C": "MainPage.xaml.cs",
+      "D": "MainPage.designer.cs"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 33,
+    "question": "What is used to convert an XML attribute string (like 'Black') to its correct property type (like Color)?",
+    "options": {
+      "A": "String Parser",
+      "B": "Type Converter",
+      "C": "Data Mapper",
+      "D": "Object Translator"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 34,
+    "question": "Which event is most fundamentally associated with the Button control?",
+    "options": {
+      "A": "Tapped",
+      "B": "CheckedChanged",
+      "C": "Clicked",
+      "D": "TextChanged"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 35,
+    "question": "Which control allows a user to select only one option from a set?",
+    "options": {
+      "A": "RadioButton",
+      "B": "CheckBox",
+      "C": "Switch",
+      "D": "Stepper"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 36,
+    "question": "To group RadioButtons so that only one can be selected, which property must be identical?",
+    "options": {
+      "A": "Category",
+      "B": "GroupName",
+      "C": "RadioID",
+      "D": "SetName"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 37,
+    "question": "Which event is fired when a SearchBar's text is modified?",
+    "options": {
+      "A": "TextChanged",
+      "B": "SearchButtonPressed",
+      "C": "InputUpdated",
+      "D": "ValueChanged"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 38,
+    "question": "What is the purpose of the Placeholder property in a SearchBar?",
+    "options": {
+      "A": "To set the search result.",
+      "B": "To define the hint text in the query input box.",
+      "C": "To limit the number of characters.",
+      "D": "To change the color of the text."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 39,
+    "question": "What is a 'Layout Panel'?",
+    "options": {
+      "A": "A button that changes the theme.",
+      "B": "A container that holds child views and determines their size and position.",
+      "C": "A tool used to compile the app.",
+      "D": "A specific type of image."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 40,
+    "question": "If you do not specify the size of a view, it will:",
+    "options": {
+      "A": "Fill the entire screen.",
+      "B": "Automatically adjust to be large enough to fit its content.",
+      "C": "Not be visible.",
+      "D": "Default to 100x100 pixels."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 41,
+    "question": "Which properties are used to request a specific size for a view?",
+    "options": {
+      "A": "Width and Height",
+      "B": "MinWidth and MinHeight",
+      "C": "WidthRequest and HeightRequest",
+      "D": "RequestedWidth and RequestedHeight"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 42,
+    "question": "Which properties should be used to retrieve the actual rendered size of a view at runtime?",
+    "options": {
+      "A": "Width and Height",
+      "B": "WidthRequest and HeightRequest",
+      "C": "ActualWidth and ActualHeight",
+      "D": "MeasuredWidth and MeasuredHeight"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 43,
+    "question": "On iOS, the double values for size are called:",
+    "options": {
+      "A": "Pixels",
+      "B": "Points",
+      "C": "Dips",
+      "D": "Millimeters"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 44,
+    "question": "On Android, the double values for size are called:",
+    "options": {
+      "A": "Density-independent pixels",
+      "B": "Points",
+      "C": "Logical pixels",
+      "D": "Vector units"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 45,
+    "question": "Which two properties are used to set a view's position within its allocated rectangle?",
+    "options": {
+      "A": "XAlign and YAlign",
+      "B": "VerticalOptions and HorizontalOptions",
+      "C": "Gravity and Anchor",
+      "D": "Margin and Padding"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 46,
+    "question": "What are the four values of the LayoutAlignment enumeration?",
+    "options": {
+      "A": "Top, Bottom, Left, Right",
+      "B": "Start, Center, End, Fill",
+      "C": "First, Middle, Last, Stretch",
+      "D": "Near, Center, Far, Justify"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 47,
+    "question": "In a StackLayout, what is the default value of the Orientation property?",
+    "options": {
+      "A": "Horizontal",
+      "B": "Vertical",
+      "C": "Grid",
+      "D": "Absolute"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 48,
+    "question": "What does the Spacing property in a StackLayout indicate?",
+    "options": {
+      "A": "The distance between the layout and its parent.",
+      "B": "The amount of space between each child view.",
+      "C": "The thickness of the border.",
+      "D": "The internal margin of the child views."
+    },
+    "answer": "B"
+  },
+  {
+    "id": 49,
+    "question": "Which property allows a child view in a StackLayout to request extra available space?",
+    "options": {
+      "A": "Fill",
+      "B": "Expands",
+      "C": "RequestExtra",
+      "D": "Grow"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 50,
+    "question": "Which LayoutOption value ensures that a view fills the extra space provided by the Expands property?",
+    "options": {
+      "A": "StartAndExpand",
+      "B": "CenterAndExpand",
+      "C": "FillAndExpand",
+      "D": "EndAndExpand"
+    },
+    "answer": "C"
+  }
+]

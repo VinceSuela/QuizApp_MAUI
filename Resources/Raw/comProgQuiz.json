@@ -1,0 +1,552 @@
+[
+  {
+    "id": 1,
+    "question": "What is the method of organizing and retrieving files from a storage medium called?",
+    "options": {
+      "A": "File System",
+      "B": "Database Management",
+      "C": "Data Repository",
+      "D": "Metadata Management"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following is a disadvantage of using older file systems?",
+    "options": {
+      "A": "Simple system administration",
+      "B": "Automatic report generation",
+      "C": "Programmers must specify what to do and how to do it",
+      "D": "Short development times"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 3,
+    "question": "In a database environment, what refers to the organization of components that regulate the collection, storage, and use of data?",
+    "options": {
+      "A": "Operating System",
+      "B": "Database Dictionary",
+      "C": "Database System",
+      "D": "Database Model"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 4,
+    "question": "What consists of raw facts of interest relevant to the end-user?",
+    "options": {
+      "A": "End-user Data",
+      "B": "Metadata",
+      "C": "Procedures",
+      "D": "Database Models"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 5,
+    "question": "What is 'data about data' that contains characteristics and relationships linking data within a database?",
+    "options": {
+      "A": "Peopleware",
+      "B": "Metadata",
+      "C": "Raw Data",
+      "D": "Application Programs"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 6,
+    "question": "Which major part of a database system identifies all physical devices like computers and peripherals?",
+    "options": {
+      "A": "Software",
+      "B": "Procedures",
+      "C": "Peopleware",
+      "D": "Hardware"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 7,
+    "question": "What type of software manages the database within the database system?",
+    "options": {
+      "A": "OS Software",
+      "B": "DBMS Software",
+      "C": "Application Programs",
+      "D": "Utility Software"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 8,
+    "question": "Who is responsible for overseeing the general operations of the database system?",
+    "options": {
+      "A": "Database Administrators",
+      "B": "System Analysts",
+      "C": "System Administrators",
+      "D": "End Users"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 9,
+    "question": "Which role is specifically responsible for designing the structure of the database?",
+    "options": {
+      "A": "Database Administrators",
+      "B": "Database Designers and Architects",
+      "C": "Programmers",
+      "D": "End Users"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 10,
+    "question": "What are the rules that govern the design and use of the database system to enforce business standards?",
+    "options": {
+      "A": "Procedures",
+      "B": "Constraints",
+      "C": "Data Models",
+      "D": "Entities"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 11,
+    "question": "What provides a representation of the infrastructure offered by a particular database system?",
+    "options": {
+      "A": "SQL View",
+      "B": "Hardware",
+      "C": "Data Dictionary",
+      "D": "Database Model"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 12,
+    "question": "Which database model category focuses on the logical nature of data representation?",
+    "options": {
+      "A": "Physical Model",
+      "B": "Conceptual Model",
+      "C": "Implementation Model",
+      "D": "Network Model"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 13,
+    "question": "What building block represents anything about which data is to be collected, such as a person or event?",
+    "options": {
+      "A": "Entity",
+      "B": "Attribute",
+      "C": "Relationship",
+      "D": "Constraint"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 14,
+    "question": "What are the defining characteristics of an entity, such as a student's name or address?",
+    "options": {
+      "A": "Metadata",
+      "B": "Relationships",
+      "C": "Attributes",
+      "D": "Fields"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 15,
+    "question": "A teacher having multiple students in a class is an example of which relationship type?",
+    "options": {
+      "A": "One-to-One (1:1)",
+      "B": "Many-to-Many (*:*)",
+      "C": "One-to-Many (1:*)",
+      "D": "Many-to-One (*:1)"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 16,
+    "question": "What are the restrictions placed on data to ensure data integrity?",
+    "options": {
+      "A": "Constraints",
+      "B": "Procedures",
+      "C": "Entities",
+      "D": "Attributes"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 17,
+    "question": "Which database model has a basic logical structure of an 'upside-down tree'?",
+    "options": {
+      "A": "Relational Model",
+      "B": "Network Model",
+      "C": "Hierarchical Database Model",
+      "D": "Object-Oriented Model"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 18,
+    "question": "Which model allows a child entity to have several parents?",
+    "options": {
+      "A": "Hierarchical Model",
+      "B": "Network Model",
+      "C": "Relational Model",
+      "D": "E-R Model"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 19,
+    "question": "Which model is a collection of relations visually represented by two-dimensional tables?",
+    "options": {
+      "A": "Relational Model",
+      "B": "Object-Oriented Model",
+      "C": "Network Model",
+      "D": "Hierarchical Model"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 20,
+    "question": "In the Relational Model, what are the rows in a table called?",
+    "options": {
+      "A": "Fields",
+      "B": "Attributes",
+      "C": "Records",
+      "D": "Links"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 21,
+    "question": "Which model uses a graphical representation via diagrams to show entities and their attributes?",
+    "options": {
+      "A": "Object-Oriented Model",
+      "B": "Relational Model",
+      "C": "Implementation Model",
+      "D": "Entity-Relationship Model (E-R Model)"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 22,
+    "question": "Which function of a DBMS ensures data is safe in the event of catastrophic events?",
+    "options": {
+      "A": "Security Management",
+      "B": "Backup and Recovery",
+      "C": "Data Storage Management",
+      "D": "Data Integrity Management"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 23,
+    "question": "What language allows a user to specify *what* must be done without specifying *how*?",
+    "options": {
+      "A": "Procedural Language",
+      "B": "Assembly Language",
+      "C": "Query Language",
+      "D": "Machine Language"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 24,
+    "question": "What is another name for a Data Dictionary?",
+    "options": {
+      "A": "Metadata Repository",
+      "B": "Data Warehouse",
+      "C": "Entity Collection",
+      "D": "Procedure Log"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 25,
+    "question": "Which type of data dictionary is included as part of the DBMS?",
+    "options": {
+      "A": "Passive Data Dictionary",
+      "B": "Integrated Data Dictionary",
+      "C": "Standalone Data Dictionary",
+      "D": "Active Data Dictionary"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 26,
+    "question": "What does SQL stand for?",
+    "options": {
+      "A": "Simple Query Language",
+      "B": "Structured Query Language",
+      "C": "System Quest Logic",
+      "D": "Standardized Query List"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 27,
+    "question": "Which SQL component allows you to retrieve, update, add, or delete data?",
+    "options": {
+      "A": "Data Definition Language (DDL)",
+      "B": "Data Control Language (DCL)",
+      "C": "Data Manipulation Language (DML)",
+      "D": "Data Integrity Language (DIL)"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 28,
+    "question": "Which SQL module enables you to create and modify the database itself?",
+    "options": {
+      "A": "DML",
+      "B": "DCL",
+      "C": "XML",
+      "D": "DDL"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 29,
+    "question": "What statement is used to delete an entire database?",
+    "options": {
+      "A": "DELETE DATABASE",
+      "B": "DROP DATABASE",
+      "C": "REMOVE DATABASE",
+      "D": "ALTER DATABASE"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 30,
+    "question": "Which statement is used to add or delete columns in an existing table?",
+    "options": {
+      "A": "ALTER TABLE",
+      "B": "UPDATE TABLE",
+      "C": "CREATE TABLE",
+      "D": "DROP TABLE"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 31,
+    "question": "Which SQL clause is used to list the attributes desired in the result of a query?",
+    "options": {
+      "A": "FROM",
+      "B": "SELECT",
+      "C": "WHERE",
+      "D": "GROUP BY"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 32,
+    "question": "Which clause consists of a predicate involving attributes of relations?",
+    "options": {
+      "A": "SELECT",
+      "B": "WHERE",
+      "C": "FROM",
+      "D": "DISTINCT"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 33,
+    "question": "What term is associated with the various methods of summarizing data, meaning 'combine into groups'?",
+    "options": {
+      "A": "Aggregation",
+      "B": "Navigation",
+      "C": "Normalization",
+      "D": "Segregation"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 34,
+    "question": "Which keyword is used to remove duplicate rows from a query output?",
+    "options": {
+      "A": "UNIQUE",
+      "B": "DISTINCT",
+      "C": "SINGLE",
+      "D": "DIFFERENT"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 35,
+    "question": "Where must the DISTINCT keyword be placed in a SQL statement?",
+    "options": {
+      "A": "At the end of the query",
+      "B": "Immediately after the SELECT keyword",
+      "C": "After the WHERE clause",
+      "D": "Before the FROM clause"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 36,
+    "question": "Which aggregate function returns the lowest value in a column?",
+    "options": {
+      "A": "BOTTOM",
+      "B": "SMALL",
+      "C": "LOW",
+      "D": "MIN"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 37,
+    "question": "Which aggregate function adds the values of a specified column?",
+    "options": {
+      "A": "COUNT",
+      "B": "SUM",
+      "C": "TOTAL",
+      "D": "ADD"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 38,
+    "question": "Which aggregate function is used to find the average of given values?",
+    "options": {
+      "A": "MEAN",
+      "B": "AVG",
+      "C": "MEDIAN",
+      "D": "SUM"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 39,
+    "question": "What does the COUNT aggregate function return?",
+    "options": {
+      "A": "The total value of records",
+      "B": "The number of records in a column",
+      "C": "The highest record in a column",
+      "D": "The average record value"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 40,
+    "question": "Which statement is used to add new data entries into a database table?",
+    "options": {
+      "A": "ADD INTO",
+      "B": "UPDATE",
+      "C": "INSERT INTO",
+      "D": "CREATE ENTRY"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 41,
+    "question": "Which clause is used with the UPDATE statement to define which field is to be updated?",
+    "options": {
+      "A": "WHERE",
+      "B": "FROM",
+      "C": "SET",
+      "D": "CHANGE"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 42,
+    "question": "What happens if you execute a DELETE statement without a WHERE clause?",
+    "options": {
+      "A": "Nothing happens",
+      "B": "All records in the table are deleted",
+      "C": "Only the first row is deleted",
+      "D": "The table structure is deleted"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 43,
+    "question": "Which clause is used to combine records from two or more tables based on a common field?",
+    "options": {
+      "A": "JOIN",
+      "B": "GROUP BY",
+      "C": "UNION",
+      "D": "MERGE"
+    },
+    "answer": "A"
+  },
+  {
+    "id": 44,
+    "question": "Which join returns rows only when there is at least one match in both tables?",
+    "options": {
+      "A": "Outer Join",
+      "B": "Inner Join",
+      "C": "Full Join",
+      "D": "Left Join"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 45,
+    "question": "Which join returns all rows from the first (left) table even if there are no matches in the second table?",
+    "options": {
+      "A": "RIGHT JOIN",
+      "B": "INNER JOIN",
+      "C": "FULL JOIN",
+      "D": "LEFT JOIN"
+    },
+    "answer": "D"
+  },
+  {
+    "id": 46,
+    "question": "What are SQL Views?",
+    "options": {
+      "A": "Physical tables containing static data",
+      "B": "SELECT statements saved in the database",
+      "C": "Temporary files for backup",
+      "D": "Graphical charts of data"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 47,
+    "question": "Which of the following is a benefit of using Views?",
+    "options": {
+      "A": "They increase data redundancy",
+      "B": "They take up significant physical storage space",
+      "C": "They can reduce complexity by simplifying SELECT statements",
+      "D": "They prevent users from seeing any data"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 48,
+    "question": "How do you bring back a view after it has been created?",
+    "options": {
+      "A": "Use the OPEN VIEW statement",
+      "B": "Execute a SELECT statement with its view name",
+      "C": "Use the RECALL command",
+      "D": "Views are automatically displayed on screen"
+    },
+    "answer": "B"
+  },
+  {
+    "id": 49,
+    "question": "When using ALTER VIEW, what must be specified?",
+    "options": {
+      "A": "Only the column to be changed",
+      "B": "The password of the DBA",
+      "C": "The complete SELECT statement contained in the view",
+      "D": "The physical location of the file"
+    },
+    "answer": "C"
+  },
+  {
+    "id": 50,
+    "question": "Which statement is used to permanently remove a view from the database?",
+    "options": {
+      "A": "DELETE VIEW",
+      "B": "DROP VIEW",
+      "C": "REMOVE VIEW",
+      "D": "CANCEL VIEW"
+    },
+    "answer": "B"
+  }
+]
