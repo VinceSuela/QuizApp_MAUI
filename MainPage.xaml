@@ -6,7 +6,7 @@
     BackgroundColor="{AppThemeBinding Light={StaticResource LightBackground}, Dark={StaticResource DarkBackground}}">
 
     <Grid Padding="20"
-          RowDefinitions="Auto,*,Auto">
+          RowDefinitions="Auto,*,Auto,Auto">
 
         <VerticalStackLayout Spacing="5">
             <Label Text="Mini Quiz"
@@ -73,20 +73,24 @@
                BackgroundColor="{AppThemeBinding Light={StaticResource LightCard}, Dark={StaticResource DarkCard}}"
                HasShadow="True">
 
-            <VerticalStackLayout Spacing="20">
+            <Grid RowDefinitions="*,2.5*">
 
                 <Label x:Name="lblQuestions"
                        FontSize="20"
                        FontAttributes="Bold"
                        TextColor="{AppThemeBinding Light=#111827, Dark=#F9FAFB}"
-                       HorizontalTextAlignment="Center"/>
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"
+                       Grid.Row="0"/>
 
-                <VerticalStackLayout Spacing="12">
+                <VerticalStackLayout Spacing="12"
+                                     Grid.Row="1">
 
                     <Button x:Name="btnA"
                             Clicked="btnA_Clicked"
                             CornerRadius="12"
                             VerticalOptions="FillAndExpand"
+                            HeightRequest="65"
                             LineBreakMode="WordWrap"
                             BackgroundColor="{AppThemeBinding Light={StaticResource ButtonLight}, Dark={StaticResource ButtonDark}}"
                             TextColor="{AppThemeBinding Light={StaticResource LightSubdued}, Dark={StaticResource DarkSubdued}}"
@@ -96,6 +100,7 @@
                             Clicked="btnB_Clicked"
                             CornerRadius="12"
                             VerticalOptions="FillAndExpand"
+                            HeightRequest="65"
                             LineBreakMode="WordWrap"
                             BackgroundColor="{AppThemeBinding Light={StaticResource ButtonLight}, Dark={StaticResource ButtonDark}}"
                             TextColor="{AppThemeBinding Light={StaticResource LightSubdued}, Dark={StaticResource DarkSubdued}}"
@@ -105,6 +110,7 @@
                             Clicked="btnC_Clicked"
                             CornerRadius="12"
                             VerticalOptions="FillAndExpand"
+                            HeightRequest="65"
                             LineBreakMode="WordWrap"
                             BackgroundColor="{AppThemeBinding Light={StaticResource ButtonLight}, Dark={StaticResource ButtonDark}}"
                             TextColor="{AppThemeBinding Light={StaticResource LightSubdued}, Dark={StaticResource DarkSubdued}}"
@@ -114,6 +120,7 @@
                             Clicked="btnD_Clicked"
                             CornerRadius="12"
                             VerticalOptions="FillAndExpand"
+                            HeightRequest="65"
                             LineBreakMode="WordWrap"
                             BackgroundColor="{AppThemeBinding Light={StaticResource ButtonLight}, Dark={StaticResource ButtonDark}}"
                             TextColor="{AppThemeBinding Light={StaticResource LightSubdued}, Dark={StaticResource DarkSubdued}}"
@@ -126,7 +133,7 @@
                        TextColor="{AppThemeBinding Light=#374151, Dark=#D1D5DB}"
                        HorizontalTextAlignment="Center"/>
 
-            </VerticalStackLayout>
+            </Grid>
         </Frame>
 
         <CollectionView x:Name="reviewList"
@@ -149,10 +156,8 @@
                                     <FormattedString>
                                         <Span Text="{Binding QuestionNumber}"
                                               FontSize="16"
-                                              FontAttributes="Bold"
                                               TextColor="{AppThemeBinding Light={StaticResource LightText}, Dark={StaticResource DarkText}}"/>
                                         <Span Text="{Binding Question}"
-                                              FontAttributes="Bold"
                                               FontSize="16"
                                               TextColor="{AppThemeBinding Light={StaticResource LightText}, Dark={StaticResource DarkText}}"/>
                                     </FormattedString>
@@ -210,14 +215,26 @@
                 BackgroundColor="{AppThemeBinding Light=#22C55E, Dark=#16A34A}"
                 TextColor="White"/>
 
-        <Button Grid.Row="2"
+        <Button Text="Start Quiz"
+                Grid.Row="2"
                 x:Name="btnStartQuiz"
-                Text="Start Quiz"
                 Clicked="btnStartQuiz_Clicked"
                 HeightRequest="55"
                 CornerRadius="25"
                 BackgroundColor="{AppThemeBinding Light=#6366F1, Dark=#4F46E5}"
                 TextColor="White"
                 FontAttributes="Bold"/>
+
+        <Button Text="Start Again"
+                Grid.Row="3"
+                x:Name="btnQuizAgain"
+                Clicked="btnQuizAgain_Clicked"
+                Margin="0,7,0,0"
+                HeightRequest="55"
+                CornerRadius="25"
+                BackgroundColor="{AppThemeBinding Light=#6366F1, Dark=#4F46E5}"
+                TextColor="White"
+                FontAttributes="Bold"
+                IsVisible="false"/>
     </Grid>
 </ContentPage>

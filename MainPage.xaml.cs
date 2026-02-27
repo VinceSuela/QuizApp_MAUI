@@ -104,7 +104,7 @@ public partial class MainPage : ContentPage
 				case "B": userText = quizItems[i].Options.B; break;
 				case "C": userText = quizItems[i].Options.C; break;
 				case "D": userText = quizItems[i].Options.D; break;
-				default: userText = "No Answer"; break;
+				default: userText = ""; break;
 			}
 
 			switch (correct)
@@ -138,6 +138,7 @@ public partial class MainPage : ContentPage
 
 		reviewList.IsVisible = true;
 		btnShowScore.IsVisible = true;
+		btnQuizAgain.IsVisible = true;
 	}
 	private void btnStartQuiz_Clicked(object sender, EventArgs e)
 	{
@@ -164,6 +165,7 @@ public partial class MainPage : ContentPage
 		selectionContainer.IsVisible = false;
 		btnStartQuiz.IsVisible = false;
 		quizCard.IsVisible = true;
+		lblQuestions.IsVisible = true;
 		btnA.IsVisible = btnB.IsVisible = btnC.IsVisible = btnD.IsVisible = true;
 
 		showText();
@@ -189,5 +191,21 @@ public partial class MainPage : ContentPage
 
 		timeRemaining = TimeSpan.FromSeconds(30);
 		timer.Start();
+	}
+
+	private void btnQuizAgain_Clicked(object sender, EventArgs e)
+	{
+		selectionContainer.IsVisible = true;
+		btnStartQuiz.IsVisible = true;
+		btnA.IsVisible = false;
+		btnB.IsVisible = false;
+		btnC.IsVisible = false;
+		btnD.IsVisible = false;
+		lblQuestions.IsVisible = false;
+		quizCard.IsVisible = false;
+		reviewList.IsVisible = false;
+		btnShowScore.IsVisible = false;
+		btnQuizAgain.IsVisible = false;
+		quizProgress.Progress = 0;
 	}
 }
