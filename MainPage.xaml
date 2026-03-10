@@ -73,7 +73,7 @@
                BackgroundColor="{AppThemeBinding Light={StaticResource LightCard}, Dark={StaticResource DarkCard}}"
                HasShadow="True">
 
-            <Grid RowDefinitions="*,2.5*">
+            <Grid RowDefinitions="*,*">
 
                 <Label x:Name="lblQuestions"
                        FontSize="20"
@@ -84,7 +84,8 @@
                        Grid.Row="0"/>
 
                 <VerticalStackLayout Spacing="12"
-                                     Grid.Row="1">
+                                     Grid.Row="1"
+                                     VerticalOptions="End">
 
                     <Button x:Name="btnA"
                             Clicked="btnA_Clicked"
